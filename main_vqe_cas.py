@@ -72,7 +72,7 @@ if __name__ == "__main__":
     print("Starting VQE")
     vqe = VqeQnp(n_qubits=n_qubits,
                  n_layers=10,
-                 n_electrons=mol.nelec,
+                 n_electrons=n_electron,
                  init_mo_occ=init_mo_occ)
 
     energy, params = vqe.run_vqe_cudaq(hamiltonian_cudaq, options={'maxiter': 10000, 'callback': True})
