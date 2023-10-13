@@ -28,7 +28,7 @@ if __name__ == "__main__":
     charge=0
     atom='geo.xyz'
     mol = gto.M(
-        atom=atom
+        atom=atom,
         spin=spin,
         charge=charge,
         basis=basis,
