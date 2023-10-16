@@ -1,10 +1,10 @@
 import numpy as np
-
+import os
 #from pyscf.scf.chkfile import dump_scf
 
 from openfermion.transforms import get_fermion_operator, jordan_wigner
-from openfermion.chem import MolecularData
-#from openfermionpyscf import run_pyscf
+# from openfermion.chem import MolecularData
+# from openfermionpyscf import run_pyscf
 from openfermion import generate_hamiltonian
 
 from src.run_pyscf import run_pyscf
